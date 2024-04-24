@@ -24,13 +24,13 @@
 // and limitations under the License.
 ////////////////////////////////////////////////////////////////////////////////////////////////
 `timescale 1ns / 1ps
-module flopenr #(parameter WIDTH = 8) (
+module flopenr #(parameter WIDTH = 64) (
   input  logic             clk, reset, en,
-  input  logic [WIDTH-1:0] d, 
+  input  logic [WIDTH-1:0] d, seed
   output logic [WIDTH-1:0] q);
 
   always_ff @(posedge clk)
-    if (reset)   q <= #1 0;
-    else if (en) q <= #1 d;
+    if (reset)   q <= seed;
+    else if (en) q <= d;
 endmodule
 
