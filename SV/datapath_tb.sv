@@ -1,6 +1,0 @@
-module tb ();
-
-
-
-
-endmodule
