@@ -34,9 +34,9 @@ output logic [63:0] shift_seed;
 
 always @(posedge clk)
     if(first)begin
-        assign shift_seed = {seed[62:0], seed[63] ~^ seed[62] ~^ seed[60] ~^ seed[59]};
+        shift_seed = {seed[62:0], seed[63] ~^ seed[62] ~^ seed[60] ~^ seed[59]};
     end
     else if(set) begin
-        assign shift_seed = {shift_seed[62:0], shift_seed[63] ~^ shift_seed[62] ~^ shift_seed[60] ~^ shift_seed[59]};
+        shift_seed = {shift_seed[62:0], shift_seed[63] ~^ shift_seed[62] ~^ shift_seed[60] ~^ shift_seed[59]};
     end
 endmodule
