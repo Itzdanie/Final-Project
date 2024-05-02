@@ -1,0 +1,94 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11f vlog 2021.3 2021.07, Jul 13 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/ItzDa/Documents/GitHub/Lab3/Final-Project/SV
+T_opt
+!s110 1714679118
+V:]:QGMNo7hUTI@??4<93a1
+04 2 4 work tb fast 0
+=1-c8e26596ad98-6633ed4e-14b-52f0
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2021.3;73
+vlfsr
+Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z3 !s110 1714679116
+!i10b 1
+!s100 EKW;j[j_ooH^@AMb4GT:E3
+IFc6U^d;3D8[jHKn_5Xce?3
+S1
+R0
+Z4 w1714580398
+Z5 8lfsr.sv
+Z6 Flfsr.sv
+!i122 0
+L0 1 21
+Z7 VDg1SIo80bB@j0V0VzS_@n1
+Z8 OL;L;2021.3;73
+r1
+!s85 0
+31
+Z9 !s108 1714679116.000000
+Z10 !s107 lfsr_tb.sv|lfsr.sv|
+Z11 !s90 -reportprogress|300|lfsr.sv|lfsr_tb.sv|
+!i113 0
+Z12 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vlfsr64
+R2
+R3
+!i10b 1
+!s100 G^1DLaY:bV0`fH[onU=0g1
+IezOb3W^aNXZfLPmDdlf>U3
+S1
+R0
+R4
+R5
+R6
+!i122 0
+L0 23 20
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R1
+vtb
+R2
+R3
+!i10b 1
+!s100 2`6C18GIc8]n:i4dR9i1F3
+IOU@4zgYzJXli<H<jf?g[G0
+S1
+R0
+w1714581262
+8lfsr_tb.sv
+Flfsr_tb.sv
+!i122 0
+L0 3 64
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R1

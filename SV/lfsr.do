@@ -25,7 +25,7 @@ if [file exists work] {
 vlib work
 
 # compile source files
-vlog GameOfLife.sv flopenr.sv GameOfLife_tb.sv datapath.sv FSM.sv lfsr.sv
+vlog lfsr.sv lfsr_tb.sv
 
 # start and run simulation
 vsim -voptargs=+acc work.tb
@@ -37,15 +37,6 @@ view wave
 # Diplays All Signals recursively
 add wave -noupdate -divider -height 32 "Testbench"
 add wave -hex /tb/*
-add wave -noupdate -divider -height 32 "FSM"
-add wave -hex /tb/GOL/*
-add wave -noupdate -divider -height 32 "Game Of Life"
-add wave -hex /tb/GOL/inst2/*
-add wave -noupdate -divider -height 32 "Flop"
-add wave -hex /tb/GOL/inst2/flop/*
-add wave -noupdate -divider -height 32 "Datapath"
-add wave -hex /tb/GOL/inst2/data/*
-
 
 -- Set Wave Output Items 
 TreeUpdate [SetDefaultTree]
@@ -60,5 +51,5 @@ configure wave -rowmargin 4
 configure wave -childrowmargin 2
 
 -- Run the Simulation 
-run 250 ns
+run 133000 ns
 

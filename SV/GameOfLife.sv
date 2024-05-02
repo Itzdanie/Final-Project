@@ -1,12 +1,10 @@
-module GameOfLife(seed, reset, en, clock, cstate);
-input logic reset, clock, en;
+module GameOfLife(seed, reset, gameStart, en, clock, cur_state);
+input logic reset, clock, en, gameStart;
 input logic [63:0] seed;
-output logic [63:0] cstate;
-logic [63:0] pre_gen;
+output logic [63:0] cur_state;
 logic [63:0] next_gen;
 
-assign pre_gen = reset ? seed : cstate;
-flopenr flop(clock, reset, en, next_gen, seed, cstate);
-datapath data(pre_gen, next_gen);
+flopenr flop(clock, reset, en, next_gen, seed, cur_state);
+datapath data(cur_state, next_gen);
 
 endmodule
