@@ -1,7 +1,17 @@
 m255
 K4
 z2
-!s99 nomlopt
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
 !s11f vlog 2021.3 2021.07, Jul 13 2021
 13
 !s112 1.1
@@ -9,86 +19,291 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/ItzDa/Documents/GitHub/Lab3/Final-Project/SV
+Z1 dC:/Users/ItzDa/Documents/GitHub/Lab3/Final-Project/SV
 T_opt
 !s110 1714679118
 V:]:QGMNo7hUTI@??4<93a1
-04 2 4 work tb fast 0
+Z2 04 2 4 work tb fast 0
 =1-c8e26596ad98-6633ed4e-14b-52f0
-!s124 OEM100
-o-quiet -auto_acc_if_foreign -work work +acc
-Z1 tCvgOpt 0
+Z3 !s124 OEM100
+Z4 o-quiet -auto_acc_if_foreign -work work +acc
+Z5 tCvgOpt 0
 n@_opt
-OL;O;2021.3;73
+Z6 OL;O;2021.3;73
+R1
+T_opt1
+!s110 1714684674
+VciM7O3n4GT8H=^Bomd<KC3
+R2
+=1-c8e26596ad98-66340302-195-1a24
+R3
+R4
+R5
+n@_opt1
+R6
+vdatapath
+Z7 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z8 !s110 1714684673
+!i10b 1
+!s100 E[fIZR8V:coCYh2;9NK0N3
+IPQSFSJZAUJ4EPX61Qi9F73
+S1
+R1
+Z9 w1714413196
+Z10 8datapath.sv
+Z11 Fdatapath.sv
+!i122 0
+L0 7 79
+Z12 VDg1SIo80bB@j0V0VzS_@n1
+Z13 OL;L;2021.3;73
+r1
+!s85 0
+31
+Z14 !s108 1714684673.000000
+Z15 !s107 lfsr.sv|FSM.sv|datapath.sv|GameOfLife_tb.sv|flopenr.sv|GameOfLife.sv|
+Z16 !s90 -reportprogress|300|GameOfLife.sv|flopenr.sv|GameOfLife_tb.sv|datapath.sv|FSM.sv|lfsr.sv|
+!i113 0
+Z17 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R5
+vevolve3
+R7
+R8
+!i10b 1
+!s100 IXoNo]gEC0MZaJ37;nO_30
+IM8klP?6AAQElYj^^>dMog1
+S1
+R1
+R9
+R10
+R11
+!i122 0
+L0 88 14
+R12
+R13
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 0
+R17
+R5
+vevolve5
+R7
+R8
+!i10b 1
+!s100 I^MlKOK_W3OeeJBMAXc:W2
+I:N2@j2?Hz8T^_^8H8DMB42
+S1
+R1
+R9
+R10
+R11
+!i122 0
+L0 103 17
+R12
+R13
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 0
+R17
+R5
+vevolve8
+R7
+R8
+!i10b 1
+!s100 X=VQ5`4bnRg0]4e9c_9PV1
+I9=CLF7`lSL3IgfFX:JW2G3
+S1
+R1
+R9
+R10
+R11
+!i122 0
+L0 122 23
+R12
+R13
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 0
+R17
+R5
+vflopenr
+R7
+R8
+!i10b 1
+!s100 ^O<oDQkQLRlO?WMji^fb71
+IQX@5SQ9cNB>f85^^M0b1Q1
+S1
+R1
+w1714603003
+8flopenr.sv
+Fflopenr.sv
+!i122 0
+L0 27 9
+R12
+R13
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 0
+R17
+R5
+vGameOfLife
+R7
+R8
+!i10b 1
+!s100 E=V^?>cm:k=L@0X;GU0FJ0
+IM7]iKRAZ4olShc>G1eoIP2
+S1
+R1
+w1714681031
+8GameOfLife.sv
+FGameOfLife.sv
+!i122 0
+L0 1 10
+R12
+R13
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 0
+R17
+R5
+n@game@of@life
+vGameOfLifeFSM
+R7
+R8
+!i10b 1
+!s100 l1zHHP<Hl;::U>SiSZM2?1
+IH^SkzEX4YgkHaXFP9KQMP0
+S1
+R1
+w1714683382
+8FSM.sv
+FFSM.sv
+!i122 0
+L0 1 41
+R12
+R13
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 0
+R17
+R5
+n@game@of@life@f@s@m
 vlfsr
-Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z3 !s110 1714679116
+R7
+R8
 !i10b 1
 !s100 EKW;j[j_ooH^@AMb4GT:E3
 IFc6U^d;3D8[jHKn_5Xce?3
 S1
-R0
-Z4 w1714580398
-Z5 8lfsr.sv
-Z6 Flfsr.sv
+R1
+Z18 w1714682355
+Z19 8lfsr.sv
+Z20 Flfsr.sv
 !i122 0
 L0 1 21
-Z7 VDg1SIo80bB@j0V0VzS_@n1
-Z8 OL;L;2021.3;73
+R12
+R13
 r1
 !s85 0
 31
-Z9 !s108 1714679116.000000
-Z10 !s107 lfsr_tb.sv|lfsr.sv|
-Z11 !s90 -reportprogress|300|lfsr.sv|lfsr_tb.sv|
+R14
+R15
+R16
 !i113 0
-Z12 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R1
-vlfsr64
-R2
-R3
-!i10b 1
-!s100 G^1DLaY:bV0`fH[onU=0g1
-IezOb3W^aNXZfLPmDdlf>U3
-S1
-R0
-R4
+R17
 R5
-R6
+vlfsr64
+R7
+R8
+!i10b 1
+!s100 <`OEoII<XEME3LlWm8FXz0
+In3D31Q_XVHPM;cdVXVIX43
+S1
+R1
+R18
+R19
+R20
 !i122 0
 L0 23 20
-R7
-R8
+R12
+R13
 r1
 !s85 0
 31
-R9
-R10
-R11
+R14
+R15
+R16
 !i113 0
-R12
-R1
-vtb
-R2
-R3
+R17
+R5
+vrules
+R7
+R8
 !i10b 1
-!s100 2`6C18GIc8]n:i4dR9i1F3
-IOU@4zgYzJXli<H<jf?g[G0
+!s100 JL3^U4`<X^MUIi:l8LemW2
+IBcFBl4c5NRZOko>2=jFA93
 S1
-R0
-w1714581262
-8lfsr_tb.sv
-Flfsr_tb.sv
-!i122 0
-L0 3 64
-R7
-R8
-r1
-!s85 0
-31
+R1
 R9
 R10
 R11
-!i113 0
+!i122 0
+L0 147 9
 R12
+R13
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 0
+R17
+R5
+vtb
+R7
+R8
+!i10b 1
+!s100 IIPRLnWkWcD^4:Zza8Whe1
+I]404P<2U]dnA7=MDCSPFV1
+S1
 R1
+w1714684154
+8GameOfLife_tb.sv
+FGameOfLife_tb.sv
+!i122 0
+L0 2 44
+R12
+R13
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 0
+R17
+R5

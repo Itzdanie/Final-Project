@@ -20,7 +20,7 @@ always @(posedge clk)
     end
 endmodule
 
-module lfsr64 (seed, clk, reset, shift_seed);
+module lfsr64 (seed, clk, set, first, shift_seed);
 //inputs and outputs for the full seed size (64 bits)
 
 //either build a 64 bit version using your smaller implementation above
@@ -29,14 +29,14 @@ module lfsr64 (seed, clk, reset, shift_seed);
 
 input logic [63:0] seed;
 input logic clk;
-input logic reset;
+input logic set, first;
 output logic [63:0] shift_seed;
 
 always @(posedge clk)
-    if(reset)begin
+    if(first)begin
         assign shift_seed = {seed[62:0], seed[63] ~^ seed[62] ~^ seed[60] ~^ seed[59]};
     end
-    else begin
+    else if(set) begin
         assign shift_seed = {shift_seed[62:0], shift_seed[63] ~^ shift_seed[62] ~^ shift_seed[60] ~^ shift_seed[59]};
     end
 endmodule

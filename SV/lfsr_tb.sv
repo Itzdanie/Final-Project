@@ -2,19 +2,22 @@
 `timescale 1ns / 1ps
 module tb ();
   logic [15:0] seed;
+  logic [63:0] seed64;
   logic clk;
   logic reset;
   logic [15:0] newseed;
+  logic [63:0] newseed64;
+  logic set, first;
 
-  integer handle4;
-  integer desc4;
-  integer i;
    //logic variables to route input and output to DUT
   
    //create file handles to write results to a file
    
    // instantiate device under test (small LFSR)
   lfsr lfsr16(seed, clk, reset, newseed);
+  integer handle4;
+  integer desc4;
+  integer i;
    //set up a clock signal
    always     
      begin
@@ -41,6 +44,7 @@ module tb ();
       
 
      end
+
 	//set up output file
 	//set up any book keeping variables you may want to use
 	//set up a starting seed.  What happens with all 0s?

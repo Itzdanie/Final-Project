@@ -40,11 +40,11 @@ add wave -hex /tb/*
 add wave -noupdate -divider -height 32 "FSM"
 add wave -hex /tb/GOL/*
 add wave -noupdate -divider -height 32 "Game Of Life"
-add wave -hex /tb/GOL/inst2/*
+add wave -hex /tb/GOL/r2/*
 add wave -noupdate -divider -height 32 "Flop"
-add wave -hex /tb/GOL/inst2/flop/*
+add wave -hex /tb/GOL/r2/flop/*
 add wave -noupdate -divider -height 32 "Datapath"
-add wave -hex /tb/GOL/inst2/data/*
+add wave -hex /tb/GOL/r2/data/*
 
 
 -- Set Wave Output Items 
@@ -60,5 +60,5 @@ configure wave -rowmargin 4
 configure wave -childrowmargin 2
 
 -- Run the Simulation 
-run 250 ns
+run 2500 ns
 

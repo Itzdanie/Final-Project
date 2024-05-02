@@ -24,19 +24,18 @@ initial
     begin
         handle3= $fopen("GameOfLife.out");
         desc3 = handle3;
-        #2500 $finish;
     end
 
 initial
     begin
-        #0 initial_seed = 64'b1001110110011101100111011001110110011101100111011001110110011101;
+        #0 initial_seed = 64'b1101110110011000100100111001011000000100110111111100001010110001;
         #0 reset = 1'b1;
         #0 en = 1'b0;
         #0 resetAll = 1'b1;
         #0 start = 1'b0;
         #5 reset = 1'b0;
         
-        #0 reset = 1'b0;
+        #0 resetAll = 1'b0;
         #10 reset = 1'b1;
         #25 reset = 1'b0;
         #625 start = 1'b1;

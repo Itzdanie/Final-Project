@@ -11,24 +11,49 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-# do lfsr.do
+# do GameOfLife.do
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is ItzDa@DANIEL.
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
 # Model Technology ModelSim SE-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
-# Start time: 14:45:16 on May 02,2024
-# vlog -reportprogress 300 lfsr.sv lfsr_tb.sv 
+# Start time: 16:17:53 on May 02,2024
+# vlog -reportprogress 300 GameOfLife.sv flopenr.sv GameOfLife_tb.sv datapath.sv FSM.sv lfsr.sv 
+# -- Compiling module GameOfLife
+# -- Compiling module flopenr
+# -- Compiling module tb
+# -- Compiling module datapath
+# -- Compiling module evolve3
+# -- Compiling module evolve5
+# -- Compiling module evolve8
+# -- Compiling module rules
+# -- Compiling module GameOfLifeFSM
 # -- Compiling module lfsr
 # -- Compiling module lfsr64
-# -- Compiling module tb
 # 
 # Top level modules:
-# 	lfsr64
 # 	tb
-# End time: 14:45:16 on May 02,2024, Elapsed time: 0:00:00
+# 	lfsr
+# End time: 16:17:53 on May 02,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs="+acc" work.tb 
-# Start time: 14:45:16 on May 02,2024
+# Start time: 16:17:53 on May 02,2024
 # ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "GameOfLifeFSM(fast)".
 # Loading sv_std.std
 # Loading work.tb(fast)
-# Loading work.lfsr(fast)
+# Loading work.GameOfLifeFSM(fast)
+# Loading work.lfsr64(fast)
+# Loading work.GameOfLife(fast)
+# Loading work.flopenr(fast)
+# Loading work.datapath(fast)
+# Loading work.evolve3(fast)
+# Loading work.rules(fast)
+# Loading work.evolve5(fast)
+# Loading work.evolve8(fast)
 # .main_pane.list.interior.cs.body
 # .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: ItzDa  Hostname: DANIEL  ProcessID: 21232
+#           Attempting to use alternate WLF file "./wlft4txbgz".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft4txbgz
