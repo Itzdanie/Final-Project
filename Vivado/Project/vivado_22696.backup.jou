@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri May  3 12:41:26 2024
+# Process ID: 22696
+# Current directory: C:/Users/jaashwa/Documents/GitHub/Final-Project/Vivado/Project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7444 C:\Users\jaashwa\Documents\GitHub\Final-Project\Vivado\Project\Project.xpr
+# Log file: C:/Users/jaashwa/Documents/GitHub/Final-Project/Vivado/Project/vivado.log
+# Journal file: C:/Users/jaashwa/Documents/GitHub/Final-Project/Vivado/Project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/jaashwa/Documents/GitHub/Final-Project/Vivado/Project/Project.xpr
+update_compile_order -fileset sources_1

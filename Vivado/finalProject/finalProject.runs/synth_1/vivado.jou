@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri May  3 13:23:17 2024
+# Process ID: 34204
+# Current directory: C:/Users/jaashwa/Documents/GitHub/Final-Project/Vivado/finalProject/finalProject.runs/synth_1
+# Command line: vivado.exe -log top_demo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_demo.tcl
+# Log file: C:/Users/jaashwa/Documents/GitHub/Final-Project/Vivado/finalProject/finalProject.runs/synth_1/top_demo.vds
+# Journal file: C:/Users/jaashwa/Documents/GitHub/Final-Project/Vivado/finalProject/finalProject.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top_demo.tcl -notrace

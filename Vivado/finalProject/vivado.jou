@@ -1,0 +1,57 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri May  3 13:13:46 2024
+# Process ID: 16000
+# Current directory: C:/Users/jaashwa/Documents/GitHub/Final-Project/Vivado/finalProject
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17928 C:\Users\jaashwa\Documents\GitHub\Final-Project\Vivado\finalProject\finalProject.xpr
+# Log file: C:/Users/jaashwa/Documents/GitHub/Final-Project/Vivado/finalProject/vivado.log
+# Journal file: C:/Users/jaashwa/Documents/GitHub/Final-Project/Vivado/finalProject\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/jaashwa/Documents/GitHub/Final-Project/Vivado/finalProject/finalProject.xpr
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/jaashwa/Documents/GitHub/Final-Project/Vivado/finalProject/finalProject.runs/impl_1/top_demo.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/jaashwa/Documents/GitHub/Final-Project/Vivado/finalProject/finalProject.runs/impl_1/top_demo.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+open_run impl_1
+open_run synth_1 -name synth_1
+startgroup
+create_report_config -report_name impl_1_route_report_utilization_0 -step route_design -report_type report_utilization -run impl_1
+set_property DISPLAY_NAME {Utilization - Route Design} [get_report_configs -of_objects [get_runs impl_1] impl_1_route_report_utilization_0] 
+startgroup
+create_report_config -report_name impl_1_route_report_timing_0 -step route_design -report_type report_timing -run impl_1
+set_property DISPLAY_NAME {Timing - Route Design} [get_report_configs -of_objects [get_runs impl_1] impl_1_route_report_timing_0] 
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+refresh_design
+startgroup
+create_report_config -report_name impl_1_route_report_utilization_1 -step route_design -report_type report_utilization -run impl_1
+set_property DISPLAY_NAME {Utilization 1 - Route Design} [get_report_configs -of_objects [get_runs impl_1] impl_1_route_report_utilization_1] 
+startgroup
+create_report_config -report_name impl_1_route_report_timing_1 -step route_design -report_type report_timing -run impl_1
+set_property DISPLAY_NAME {Timing 1 - Route Design} [get_report_configs -of_objects [get_runs impl_1] impl_1_route_report_timing_1] 
+startgroup
+create_report_config -report_name impl_1_route_report_power_1 -step route_design -report_type report_power -run impl_1
+set_property DISPLAY_NAME {Power 1 - Route Design} [get_report_configs -of_objects [get_runs impl_1] impl_1_route_report_power_1] 
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+current_design impl_1
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
